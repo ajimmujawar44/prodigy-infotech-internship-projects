@@ -1,0 +1,6 @@
+Cluster,Customers,Avg_Age,Avg_Income,Avg_Spending,Segment
+0,81,42.7,55.3,49.5,"Standard (Mid income, Mid spend)"
+1,39,32.7,86.5,82.1,"Target / VIP (High income, High spend)"
+2,22,25.3,25.7,79.4,"Young Spenders (Low income, High spend)"
+3,35,41.1,88.2,17.1,"Careful (High income, Low spend)"
+4,23,45.2,26.3,20.9,"Sensible (Low income, Low spend)"

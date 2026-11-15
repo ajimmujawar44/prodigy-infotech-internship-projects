@@ -1,0 +1,25 @@
+Generative AI learns patterns from examples and uses those patterns to create new content.
+A language model predicts the next token from the tokens that came before it.
+A prompt gives the model context and helps guide the direction of generated text.
+Good prompts provide a clear topic, relevant context, and a useful starting point.
+GPT-2 is a decoder-only Transformer language model trained to predict the next token.
+The tokenizer converts text into token IDs that the model can process.
+A token may represent a word, part of a word, punctuation, or a piece of whitespace.
+During generation, the model predicts one token and then uses it as context for the next prediction.
+Self-attention helps the model connect information across earlier tokens in a sequence.
+Causal attention prevents the model from using future tokens when learning to predict the next token.
+Fine-tuning continues training a pretrained model on a smaller dataset for a specific task or style.
+A clean and relevant dataset can help a model learn consistent vocabulary and writing patterns.
+A very small dataset may lead to repetition and memorization rather than useful generalization.
+Training loss measures how well the model predicts the expected next tokens.
+Cross-entropy loss penalizes predictions that assign low probability to the correct next token.
+An optimizer uses gradients to update the model parameters during training.
+Temperature changes how concentrated or diverse the next-token probability distribution is.
+Top-k sampling considers only the most likely candidate tokens before sampling.
+Top-p sampling chooses from a group of tokens whose cumulative probability reaches a chosen threshold.
+Higher sampling diversity can create surprising text but may also reduce coherence.
+A fluent response is not necessarily a factual response, because language models can make mistakes.
+Generated text should be reviewed for relevance, repetition, accuracy, bias, and safety.
+Responsible AI practice includes protecting private information and respecting data licenses.
+A useful experiment changes one setting at a time and records how the generated text changes.
+The goal of this project is to understand the relationship between training data, model behavior, and text generation.

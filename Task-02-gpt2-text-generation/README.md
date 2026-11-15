@@ -18,7 +18,7 @@ Fine-tune GPT-2 on a small custom text corpus, then generate new text from a pro
 gpt2-text-generation/
 ├── data/
 │   └── sample_train.txt       # Small example corpus; replace with your own text
-├── outputs/                   # Model checkpoints are written here (not committed)
+├── outputs/gpt2-custom/        # Fine-tuned inference model and tokenizer (weights via Git LFS)
 ├── src/
 │   ├── train.py               # Fine-tune pretrained GPT-2
 │   └── generate.py            # Generate text from a prompt
@@ -86,6 +86,13 @@ On Windows PowerShell, the one-line command is simplest if line continuations ca
 The training script saves the model and tokenizer into `outputs/gpt2-custom/`. Use more epochs only after checking for overfitting and output quality. The tiny sample corpus is for verifying that the pipeline runs, not for judging model quality.
 
 ## 4. Generate text
+
+The fine-tuned inference model is included in `outputs/gpt2-custom/`. Its model weights are stored with Git LFS; install Git LFS before cloning to download them:
+
+```bash
+git lfs install
+git clone https://github.com/ajimmujawar44/prodigy-infotech-internship-projects.git
+```
 
 ```bash
 python src/generate.py \
@@ -199,7 +206,7 @@ Suggested questions:
 3. Your dataset source and license/permission notes.
 4. A short experiment log with prompts and generated outputs.
 5. Screenshots only if they add evidence (for example, terminal training and generated output).
-6. Do not commit large model checkpoints, virtual environments, private data, or secrets.
+6. Do not commit intermediate training checkpoints, virtual environments, private data, or secrets. This repository includes only the final inference model and tokenizer; its large weight file is stored with Git LFS.
 
 ## License
 

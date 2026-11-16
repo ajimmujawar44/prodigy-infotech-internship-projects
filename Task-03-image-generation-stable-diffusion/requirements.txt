@@ -1,0 +1,7 @@
+# Main (KerasCV Stable Diffusion - matches the reference tutorial)
+tensorflow>=2.15
+keras-cv>=0.8
+matplotlib>=3.7
+pillow>=10.0
+numpy>=1.24
+jupyter>=1.0

@@ -1,0 +1,6 @@
+tensorflow>=2.15
+tensorflow-hub>=0.16     # only needed for the optional fast style transfer
+matplotlib>=3.7
+numpy>=1.24
+pillow>=10.0
+jupyter>=1.0
